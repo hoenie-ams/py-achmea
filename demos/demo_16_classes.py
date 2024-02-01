@@ -7,6 +7,9 @@ class MyClass:
     """A simple class"""
     i = 12345
 
+    def __init__(self, s):
+        self.s = s
+
     def foo(self):
         return "hello world"
 
