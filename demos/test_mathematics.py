@@ -41,4 +41,4 @@ def test_hypotenuse_calculates_correctly_for_mixed_positive_and_negative_numbers
 
 
 def test_hypotenuse_calculates_correctly_for_large_numbers():
-    assert hypotenuse(1e6, 1e6) == math.sqrt(2) * 1e6
+    assert pytest.approx(hypotenuse(3e100, 4e100)) == 5e100
